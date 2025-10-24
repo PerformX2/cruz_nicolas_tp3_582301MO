@@ -1124,6 +1124,7 @@ sources/0 = SubResource("TileSetAtlasSource_ancdk")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-20, 19)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 10, 0, 0, 0, 1, 0, 0, 0, 0, 0, 28, 0, 10, 0, 0, 0, 2, 0, 0, 0, 0, 0, 29, 0, 10, 0, 0, 0)
 tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_ancdk")]
