@@ -127,8 +127,7 @@ speed = 2.8
 jump_power = 8.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(0, -15)
-zoom = Vector2(4, 4)
+offset = Vector2(0, -20)
 position_smoothing_enabled = true
 position_smoothing_speed = 9.0
 

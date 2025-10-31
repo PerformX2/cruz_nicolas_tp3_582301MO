@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cpowsjihpl6h7"]
+[gd_scene load_steps=17 format=4 uid="uid://cpowsjihpl6h7"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_1gua8"]
 [ext_resource type="PackedScene" uid="uid://0in4fdamtkga" path="res://scenes/player.tscn" id="2_ancdk"]
@@ -8,6 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://vempkmj5c6rw" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/GRASS 3-2.png" id="4_3qm2i"]
 [ext_resource type="Texture2D" uid="uid://dnnw15atrmxkm" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/MUSHROOM 2-1.png" id="6_sgi1b"]
 [ext_resource type="AudioStream" uid="uid://dix1ls5niqi7x" path="res://assets/audio/bg_music.wav" id="8_awubr"]
+[ext_resource type="Texture2D" uid="uid://d3p61s47i3h4k" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/BACKGROUND.png" id="8_rby5i"]
+[ext_resource type="Texture2D" uid="uid://dyav3tbl4h5uc" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Fourth.png" id="9_uejqn"]
+[ext_resource type="Texture2D" uid="uid://di7qiefsdt53" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Third.png" id="10_2r61p"]
+[ext_resource type="Texture2D" uid="uid://dmwuh6yas2t7v" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Second.png" id="11_kymhr"]
+[ext_resource type="Texture2D" uid="uid://3r2qbmc2mdnx" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - First.png" id="12_g4lra"]
+[ext_resource type="Texture2D" uid="uid://bwp0rr42f4iti" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/BUSH - BACKGROUND.png" id="12_kymhr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ancdk"]
 texture = ExtResource("1_1gua8")
@@ -1124,10 +1130,11 @@ sources/0 = SubResource("TileSetAtlasSource_ancdk")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-20, 19)
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 10, 0, 0, 0, 1, 0, 0, 0, 0, 0, 28, 0, 10, 0, 0, 0, 2, 0, 0, 0, 0, 0, 29, 0, 10, 0, 0, 0)
+tile_map_data = PackedByteArray("AAAAAAAAAAAcAAwAAAABAAAAAAAdAAwAAAACAAAAAAAeAAwAAAD+/wAAAAAaAAwAAAD//wAAAAAbAAwAAAADAAAAAAAfAAwAAAAEAAAAAAAUAA4AAAAEAAEAAAAUAA8AAAAFAAAAAAAVAA4AAAAFAAEAAAAVAA8AAAAGAAEAAAAWAA8AAAAGAAIAAAAWABAAAAAHAAEAAAAXAA8AAAAHAAIAAAAXABAAAAAIAAIAAAAUAA4AAAAIAAMAAAAUAA8AAAAJAAIAAAAVAA4AAAAJAAMAAAAVAA8AAAAKAAMAAAAWAA8AAAAKAAQAAAAWABAAAAALAAMAAAAXAA8AAAALAAQAAAAXABAAAAAMAAQAAAAUAA4AAAAMAAUAAAAUAA8AAAANAAQAAAAVAA4AAAANAAUAAAAVAA8AAAAOAAUAAAAWAA8AAAAOAAYAAAAWABAAAAAPAAUAAAAXAA8AAAAPAAYAAAAXABAAAAAQAAYAAAAUAA4AAAAQAAcAAAAUAA8AAAARAAYAAAAVAA4AAAARAAcAAAAVAA8AAAASAAcAAAAWAA8AAAASAAgAAAAWABAAAAATAAcAAAAXAA8AAAATAAgAAAAXABAAAAAUAAgAAAAUAA4AAAAUAAkAAAAUAA8AAAAVAAgAAAAVAA4AAAAVAAkAAAAVAA8AAAAWAAkAAAAWAA8AAAAWAAoAAAAWABAAAAAXAAkAAAAXAA8AAAAXAAoAAAAXABAAAAAYAAoAAAAUAA4AAAAYAAsAAAAUAA8AAAAZAAoAAAAVAA4AAAAZAAsAAAAVAA8AAAAaAAsAAAAWAA8AAAAaAAwAAAAWABAAAAAbAAsAAAAXAA8AAAAbAAwAAAAXABAAAAAcAAwAAAAUAA4AAAAcAA0AAAAUAA8AAAAdAAwAAAAVAA4AAAAdAA0AAAAVAA8AAAAeAA0AAAAbAAwAAAAfAA0AAAAcAAwAAAAgAA0AAAAdAAwAAAAhAA0AAAAeAAwAAAAiAA0AAAAbAAwAAAAjAA0AAAAcAAwAAAAkAA0AAAAdAAwAAAAlAA0AAAAeAAwAAAAmAA0AAAAbAAwAAAAnAA0AAAAcAAwAAAAoAA0AAAAdAAwAAAApAA0AAAAeAAwAAAAqAA0AAAAeAAwAAAArAA0AAAAbAAwAAAAsAA0AAAAcAAwAAAAtAA0AAAAdAAwAAAAuAA0AAAAeAAwAAAAvAA0AAAAeAAwAAAAwAA0AAAAbAAwAAAAxAA0AAAAcAAwAAAAyAA0AAAAdAAwAAAAzAA0AAAAeAAwAAAA0AA0AAAAeAAwAAAA1AA0AAAAbAAwAAAA2AA0AAAAcAAwAAAA3AA0AAAAdAAwAAAA4AA0AAAAeAAwAAAA5AA0AAAAeAAwAAAA6AA0AAAAbAAwAAAA7AA0AAAAcAAwAAAA8AA0AAAAdAAwAAAA9AA0AAAAeAAwAAAA+AA0AAAAeAAwAAAA/AA0AAAAbAAwAAABAAA0AAAAcAAwAAABBAA0AAAAdAAwAAABCAA0AAAAeAAwAAABDAA0AAAAeAAwAAABEAA0AAAAbAAwAAABFAA0AAAAcAAwAAABGAA0AAAAdAAwAAABHAA0AAAAeAAwAAAA=")
 tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_ancdk")]
+position = Vector2(521, 209)
 jump_power = 10.0
 
 [node name="honeybucket" parent="." instance=ExtResource("3_27ss6")]
@@ -1180,10 +1187,61 @@ scale = Vector2(0.348299, 0.460064)
 texture = ExtResource("6_sgi1b")
 
 [node name="Background" type="Sprite2D" parent="images"]
+visible = false
 z_index = -10
 position = Vector2(-62.3811, 47.3866)
 scale = Vector2(0.549521, 0.549521)
 texture = ExtResource("3_hc3m2")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+texture_filter = 1
+texture = ExtResource("8_rby5i")
+centered = false
+
+[node name="WOODS - Fourth" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(512, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/WOODS - Fourth"]
+texture_filter = 1
+texture = ExtResource("9_uejqn")
+centered = false
+
+[node name="WOODS - Third" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(512, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/WOODS - Third"]
+texture_filter = 1
+texture = ExtResource("10_2r61p")
+centered = false
+
+[node name="WOODS - Second" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(512, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/WOODS - Second"]
+texture_filter = 1
+texture = ExtResource("11_kymhr")
+centered = false
+
+[node name="BUSH - BACKGROUND" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(512, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BUSH - BACKGROUND"]
+texture_filter = 1
+texture = ExtResource("12_kymhr")
+centered = false
+
+[node name="WOODS - First" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(512, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/WOODS - First"]
+texture_filter = 1
+texture = ExtResource("12_g4lra")
+centered = false
 
 [node name="sfx_background_music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_awubr")

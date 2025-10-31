@@ -13,6 +13,7 @@ func _process(delta):
 	#joue l'animation de marche
 	if abs(player_controller.velocity.x) > 0.0:
 		animation_player.play("move")
+		
 	#joue l'animation "immobile" quand on ne marche plus
 	else:
 		animation_player.play("idle")
