@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://bruwvlxxvms1c"]
+
+[ext_resource type="Texture2D" uid="uid://beu2iwaptd4un" path="res://assets/images/pixel_art_bee_1.png" id="1_c4vmg"]
+[ext_resource type="Script" uid="uid://cuubqwyqfpv23" path="res://scripts/hud.gd" id="1_y5tme"]
+[ext_resource type="LabelSettings" uid="uid://c1nfoba3hyhja" path="res://assets/UI settings/new_label_settings.tres" id="2_rd3kb"]
+
+[node name="HUD" type="Control" node_paths=PackedStringArray("collectable_bee_label", "portal_label") groups=["hud"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y5tme")
+collectable_bee_label = NodePath("CollectableBeeTexture/CollectableBeeLabel")
+portal_label = NodePath("PortalLabel")
+
+[node name="CollectableBeeTexture" type="TextureRect" parent="."]
+layout_mode = 1
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 144.0
+offset_bottom = 176.0
+texture = ExtResource("1_c4vmg")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="CollectableBeeLabel" type="Label" parent="CollectableBeeTexture"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.222
+anchor_top = 0.493
+anchor_right = 0.222
+anchor_bottom = 0.5
+offset_left = 97.808
+offset_top = -51.048
+offset_right = 265.808
+offset_bottom = 39.0
+grow_vertical = 2
+text = "x 00"
+label_settings = ExtResource("2_rd3kb")
+vertical_alignment = 1
+
+[node name="PortalLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 173.0
+offset_bottom = 91.0
+text = "PORTAL CLOSED :("
+label_settings = ExtResource("2_rd3kb")

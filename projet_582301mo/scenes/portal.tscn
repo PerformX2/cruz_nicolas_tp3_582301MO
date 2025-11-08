@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://xmukcc7fi3mp"]
+
+[ext_resource type="Texture2D" uid="uid://dx0p6ljieon6s" path="res://assets/images/portails_2.png" id="1_jr6l0"]
+[ext_resource type="AudioStream" uid="uid://c6va6djtr7eg" path="res://assets/audio/portal_opened.wav" id="2_d4jfq"]
+[ext_resource type="AudioStream" uid="uid://p7x26cafy6l2" path="res://assets/audio/portal_closed.wav" id="3_dyed0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ckw30"]
+radius = 93.75
+height = 425.0
+
+[node name="Portal" type="Area2D"]
+scale = Vector2(0.837222, 0.837222)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -10
+texture_filter = 1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_jr6l0")
+region_enabled = true
+region_rect = Rect2(510, 0, 510, 640)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("CapsuleShape2D_ckw30")
+
+[node name="sfx_portal_opened" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_d4jfq")
+volume_db = -18.0
+
+[node name="sfx_portal_closed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dyed0")
+volume_db = 8.0

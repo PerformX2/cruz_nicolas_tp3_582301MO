@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="projet_tp3_582301MO"
-run/main_scene="uid://cpowsjihpl6h7"
+run/main_scene="uid://c0kdtghpnlykw"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

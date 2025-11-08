@@ -1,16 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8y88eftsoghu"]
+[gd_scene load_steps=4 format=3 uid="uid://c0kdtghpnlykw"]
 
 [ext_resource type="Script" uid="uid://dmnaftmd43mw8" path="res://scripts/main_menu.gd" id="1_p6ils"]
 [ext_resource type="Texture2D" uid="uid://dyk2lurxeruum" path="res://assets/images/dark_forest.jpg" id="2_2kle8"]
 [ext_resource type="FontFile" uid="uid://b8pn1k641e8pk" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="3_dcjl3"]
 
-[node name="Main_Menu" type="Control"]
+[node name="Main_Menu" type="Control" groups=["main_menu"]]
 layout_mode = 3
-anchor_top = 0.356
-anchor_right = 0.643
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 0.311996
-offset_right = 0.263977
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p6ils")
@@ -20,13 +18,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -589.0
-offset_top = -331.0
-offset_right = 590.0
-offset_bottom = 332.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_2kle8")
+expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -42,7 +37,7 @@ theme_override_constants/margin_bottom = 12
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 60
+theme_override_constants/separation = 15
 
 [node name="Seperator" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -64,14 +59,14 @@ alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 32
+theme_override_constants/separation = 25
 alignment = 1
 
 [node name="Start_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(120, 32)
+custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_dcjl3")
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 36
 text = "Start
 "
 
@@ -79,9 +74,9 @@ text = "Start
 layout_mode = 2
 
 [node name="Exit_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(120, 32)
+custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_dcjl3")
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 36
 text = "Exit
 "

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iqnr6gfmwv07"
-path="res://.godot/imported/Capture d’écran 2025-10-17 142821.png-d1f9eb69c88b0d86fe5eac54f40a3068.ctex"
+uid="uid://di7qiefsdt53"
+path="res://.godot/imported/WOODS - Third.png-645df2e89ea57017bf58b6ecb17544cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/pigor/Capture d’écran 2025-10-17 142821.png"
-dest_files=["res://.godot/imported/Capture d’écran 2025-10-17 142821.png-d1f9eb69c88b0d86fe5eac54f40a3068.ctex"]
+source_file="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Third.png"
+dest_files=["res://.godot/imported/WOODS - Third.png-645df2e89ea57017bf58b6ecb17544cf.ctex"]
 
 [params]
 
