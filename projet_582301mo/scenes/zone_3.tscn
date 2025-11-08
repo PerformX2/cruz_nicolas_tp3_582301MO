@@ -1132,7 +1132,7 @@ tile_map_data = PackedByteArray("AADg////AAAfAAwAABDg/wAAAAAfAA0AABDg/wEAAAAfAA4
 tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_pmhey")]
-position = Vector2(80, -24)
+position = Vector2(64, 136)
 jump_power = 10.0
 
 [node name="honeybucket" parent="." instance=ExtResource("3_daikh")]
