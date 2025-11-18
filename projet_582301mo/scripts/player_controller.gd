@@ -7,6 +7,7 @@ class_name PlayerController
 var speed_multiplier = 30.0
 var jump_multiplier = -30.0
 var direction = 0
+var entered = false
 
 #const SPEED = 300.0
 #const JUMP_VELOCITY = -400.0
@@ -30,3 +31,16 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(_body):
+	entered = true
+	
+func _on_area_2d_body_exited(_body):
+	entered = false
+	
+func _process(_delta):
+	if entered == true:
+		if Input.is_action_just_pressed("enter_portal"):
+			get_tree().change_scene_to_file("res://scenes/zone_2.tscn")
+			

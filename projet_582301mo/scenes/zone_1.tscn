@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cpowsjihpl6h7"]
+[gd_scene load_steps=18 format=4 uid="uid://cpowsjihpl6h7"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_1gua8"]
 [ext_resource type="PackedScene" uid="uid://xmukcc7fi3mp" path="res://scenes/portal.tscn" id="2_2r61p"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cgaic0htwo0qa" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/GRASS 1-1.png" id="3_6b3hp"]
 [ext_resource type="PackedScene" uid="uid://5d455m3a3xob" path="res://scenes/honeybucket.tscn" id="3_27ss6"]
 [ext_resource type="Texture2D" uid="uid://vempkmj5c6rw" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/GRASS 3-2.png" id="4_3qm2i"]
-[ext_resource type="Script" uid="uid://bmoyvsv7bxctm" path="res://scripts/portail_1_zone_1.gd" id="4_kymhr"]
 [ext_resource type="PackedScene" uid="uid://bj7rqu1i7uw8b" path="res://scenes/press_enter.tscn" id="5_g4lra"]
 [ext_resource type="Texture2D" uid="uid://dnnw15atrmxkm" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/MUSHROOM 2-1.png" id="6_sgi1b"]
 [ext_resource type="Texture2D" uid="uid://dyav3tbl4h5uc" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Fourth.png" id="8_2r61p"]
@@ -1128,8 +1127,8 @@ terrain_set_0/terrain_1/color = Color(0.158347, 1, 0.200583, 1)
 sources/0 = SubResource("TileSetAtlasSource_ancdk")
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4lra"]
-radius = 191.108
-height = 668.879
+radius = 160.0
+height = 560.0
 
 [node name="Zone1" type="Node2D"]
 
@@ -1139,17 +1138,18 @@ tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_ancdk")]
 z_index = 13
-position = Vector2(80, -24)
+position = Vector2(1104, 160)
 jump_power = 10.0
 
 [node name="honeybucket" parent="." instance=ExtResource("3_27ss6")]
-position = Vector2(128, 208)
+position = Vector2(1032, 216)
 
 [node name="Area2D" type="Area2D" parent="."]
 z_index = 11
-script = ExtResource("4_kymhr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 10
+position = Vector2(1168, 200)
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_g4lra")
 
@@ -1157,10 +1157,6 @@ shape = SubResource("CapsuleShape2D_g4lra")
 z_index = 20
 position = Vector2(1200, 160)
 scale = Vector2(0.0800293, 0.0800293)
-
-[node name="Portal" parent="." instance=ExtResource("2_2r61p")]
-z_index = 10
-position = Vector2(1176, 208)
 
 [node name="images" type="Sprite2D" parent="."]
 position = Vector2(120, -32)
@@ -1267,3 +1263,9 @@ centered = false
 stream = ExtResource("8_awubr")
 volume_db = -30.0
 autoplay = true
+
+[node name="Portal" parent="." instance=ExtResource("2_2r61p")]
+position = Vector2(1168, 200)
+
+[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Player" method="_on_area_2d_body_exited"]

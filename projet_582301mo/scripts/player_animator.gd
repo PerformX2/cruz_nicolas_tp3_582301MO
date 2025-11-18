@@ -4,7 +4,7 @@ extends Node2D
 @export var animation_player : AnimationPlayer   	#variable qui joue une animation(s) nommé(s) et enregistré dans l'onglet animation
 @export var sprite : Sprite2D						#variable qui sert à ramener le Sprite2D où il y a les images pour les animations
 
-func _process(delta):
+func _process(_delta):
 	#flip le personnage horizontalement dépendament de la direction 
 	if player_controller.direction == 1:
 		sprite.flip_h = false
