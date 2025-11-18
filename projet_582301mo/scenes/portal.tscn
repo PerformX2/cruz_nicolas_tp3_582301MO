@@ -5,8 +5,8 @@
 [ext_resource type="AudioStream" uid="uid://p7x26cafy6l2" path="res://assets/audio/portal_closed.wav" id="3_dyed0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ckw30"]
-radius = 93.75
-height = 425.0
+radius = 191.108
+height = 668.879
 
 [node name="Portal" type="Area2D"]
 scale = Vector2(0.837222, 0.837222)

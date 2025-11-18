@@ -41,12 +41,15 @@ position = Vector2(0.01, -0.025)
 scale = Vector2(0.0894397, 0.0894397)
 sprite_frames = SubResource("SpriteFrames_orirv")
 animation = &"standby"
+frame = 1
+frame_progress = 0.0705688
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_045iq")
 
 [node name="sfx_honey_pickedup" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_65b7r")
-volume_db = -10.8
+volume_db = -28.0
+pitch_scale = 2.6
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

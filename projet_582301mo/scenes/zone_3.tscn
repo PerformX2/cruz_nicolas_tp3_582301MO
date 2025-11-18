@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://dwj67lpduols1"]
+[gd_scene load_steps=15 format=4 uid="uid://dwj67lpduols1"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_xiek5"]
 [ext_resource type="PackedScene" uid="uid://0in4fdamtkga" path="res://scenes/player.tscn" id="2_pmhey"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://bwp0rr42f4iti" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/BUSH - BACKGROUND.png" id="10_7n23b"]
 [ext_resource type="Texture2D" uid="uid://3r2qbmc2mdnx" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - First.png" id="11_x4efg"]
 [ext_resource type="AudioStream" uid="uid://dix1ls5niqi7x" path="res://assets/audio/bg_music.wav" id="12_smcp4"]
-[ext_resource type="PackedScene" uid="uid://xmukcc7fi3mp" path="res://scenes/portal.tscn" id="13_ljk5i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ancdk"]
 texture = ExtResource("1_xiek5")
@@ -1137,10 +1136,6 @@ jump_power = 10.0
 
 [node name="honeybucket" parent="." instance=ExtResource("3_daikh")]
 position = Vector2(128, 208)
-
-[node name="Portal" parent="." instance=ExtResource("13_ljk5i")]
-z_index = 10
-position = Vector2(24, 136)
 
 [node name="images" type="Sprite2D" parent="."]
 position = Vector2(120, -32)
