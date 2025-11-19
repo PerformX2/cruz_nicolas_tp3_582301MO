@@ -123,8 +123,7 @@ height = 40.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_mo32d")
-speed = 2.8
-jump_power = 8.0
+speed = 3.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -15)
@@ -156,4 +155,4 @@ shape = SubResource("CapsuleShape2D_mo32d")
 
 [node name="sfx_jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_dqkch")
-volume_db = -17.049
+volume_db = -19.0

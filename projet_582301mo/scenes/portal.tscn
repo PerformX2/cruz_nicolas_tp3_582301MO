@@ -9,7 +9,7 @@ radius = 191.108
 height = 668.879
 
 [node name="Portal" type="Area2D"]
-scale = Vector2(0.837222, 0.837222)
+scale = Vector2(0.7, 0.7)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -10

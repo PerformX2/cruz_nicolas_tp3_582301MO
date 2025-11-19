@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dwj67lpduols1"]
+[gd_scene load_steps=14 format=4 uid="uid://dwj67lpduols1"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_xiek5"]
 [ext_resource type="PackedScene" uid="uid://0in4fdamtkga" path="res://scenes/player.tscn" id="2_pmhey"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dmwuh6yas2t7v" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Second.png" id="9_l2tqv"]
 [ext_resource type="Texture2D" uid="uid://bwp0rr42f4iti" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/BUSH - BACKGROUND.png" id="10_7n23b"]
 [ext_resource type="Texture2D" uid="uid://3r2qbmc2mdnx" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - First.png" id="11_x4efg"]
-[ext_resource type="AudioStream" uid="uid://dix1ls5niqi7x" path="res://assets/audio/bg_music.wav" id="12_smcp4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ancdk"]
 texture = ExtResource("1_xiek5")
@@ -1131,8 +1130,7 @@ tile_map_data = PackedByteArray("AADg////AAAfAAwAABDg/wAAAAAfAA0AABDg/wEAAAAfAA4
 tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_pmhey")]
-position = Vector2(64, 136)
-jump_power = 10.0
+position = Vector2(64, 72)
 
 [node name="honeybucket" parent="." instance=ExtResource("3_daikh")]
 position = Vector2(128, 208)
@@ -1247,8 +1245,3 @@ motion_mirroring = Vector2(512, 0)
 texture_filter = 1
 texture = ExtResource("11_x4efg")
 centered = false
-
-[node name="sfx_background_music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("12_smcp4")
-volume_db = -30.0
-autoplay = true
