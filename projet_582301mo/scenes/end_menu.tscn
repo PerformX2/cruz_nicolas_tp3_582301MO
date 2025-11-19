@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b40rfm3tdokg5"]
 
 [ext_resource type="Texture2D" uid="uid://dyk2lurxeruum" path="res://assets/images/dark_forest.jpg" id="2_2kle8"]
-[ext_resource type="Texture2D" uid="uid://gj86cmy8vvps" path="res://assets/images/Pigor animation sheet (fell).png" id="3_albv7"]
+[ext_resource type="Texture2D" uid="uid://c8xy34rxx70pq" path="res://assets/images/Pigor (fell).png" id="3_albv7"]
 [ext_resource type="FontFile" uid="uid://b8pn1k641e8pk" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="3_dcjl3"]
 
 [node name="End_Menu" type="Control" groups=["main_menu"]]
