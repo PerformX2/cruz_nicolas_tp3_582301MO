@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgt4x4vrlnamg"
-path="res://.godot/imported/Pigor(jpg).jpg-059448a5979e055ca1909695c651df26.ctex"
+uid="uid://gj86cmy8vvps"
+path="res://.godot/imported/Pigor animation sheet (fell).png-dcefe5f09aeb4916b6f46e059f20cc06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Pigor(jpg).jpg"
-dest_files=["res://.godot/imported/Pigor(jpg).jpg-059448a5979e055ca1909695c651df26.ctex"]
+source_file="res://assets/images/Pigor animation sheet (fell).png"
+dest_files=["res://.godot/imported/Pigor animation sheet (fell).png-dcefe5f09aeb4916b6f46e059f20cc06.ctex"]
 
 [params]
 

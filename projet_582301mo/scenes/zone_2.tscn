@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://b135wbyrij1x0"]
+[gd_scene load_steps=18 format=4 uid="uid://b135wbyrij1x0"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_80huu"]
 [ext_resource type="PackedScene" uid="uid://0in4fdamtkga" path="res://scenes/player.tscn" id="2_yngje"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cbhds1gdy6sdh" path="res://scenes/portail_2.gd" id="4_yngje"]
 [ext_resource type="Texture2D" uid="uid://vempkmj5c6rw" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/GRASS 3-2.png" id="5_wsxs7"]
 [ext_resource type="Texture2D" uid="uid://dnnw15atrmxkm" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/MUSHROOM 2-1.png" id="6_sjvwj"]
+[ext_resource type="PackedScene" uid="uid://bj7rqu1i7uw8b" path="res://scenes/press_enter.tscn" id="6_yngje"]
 [ext_resource type="Texture2D" uid="uid://dyav3tbl4h5uc" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Fourth.png" id="7_b6cw7"]
 [ext_resource type="Texture2D" uid="uid://di7qiefsdt53" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Third.png" id="8_edsy4"]
 [ext_resource type="Texture2D" uid="uid://dmwuh6yas2t7v" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Second.png" id="9_8cgi5"]
@@ -1163,6 +1164,11 @@ scale = Vector2(0.11999, 0.11999)
 texture = ExtResource("13_80huu")
 region_enabled = true
 region_rect = Rect2(510, 0, 510, 640)
+
+[node name="press_enter" parent="." instance=ExtResource("6_yngje")]
+z_index = 20
+position = Vector2(640, 112)
+scale = Vector2(0.0800293, 0.0800293)
 
 [node name="images" type="Sprite2D" parent="."]
 position = Vector2(608, 152)
