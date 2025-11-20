@@ -9,6 +9,10 @@ func _ready():
 	start_button.button_down.connect(on_start_pressed)
 	exit_button.button_down.connect(on_exit_pressed)
 	
+func _process(_delta):
+	if Input.is_action_just_pressed("start"):
+		on_start_pressed()
+	
 func on_start_pressed() -> void:
 	get_tree().change_scene_to_packed(start_level)
 

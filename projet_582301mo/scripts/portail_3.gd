@@ -1,11 +1,13 @@
-# portail_1.gd
 extends Area2D
 
 var entered = false
 @onready var honeybucket_node = get_node_or_null("../key/honeybucket") # adjust path
 
+@onready var sfx_portail_closed: AudioStreamPlayer = $sfx_portail_closed
+@onready var sfx_portail_opened: AudioStreamPlayer = $sfx_portail_opened
+
+
 func _has_key_been_taken() -> bool:
-	# If honeybucket node no longer exists, assume key taken
 	return honeybucket_node == null or not is_instance_valid(honeybucket_node)
 
 func _on_body_entered(body):
@@ -22,6 +24,13 @@ func _on_body_exited(body):
 func _process(_delta):
 	if entered and Input.is_action_just_pressed("enter_portal"):
 		if _has_key_been_taken():
+			# Play portal opened sound
+			if sfx_portail_opened:
+				sfx_portail_opened.play()
+				await sfx_portail_opened.finished  # Wait for the sound to finish
 			get_tree().change_scene_to_file("res://scenes/end_menu.tscn")
 		else:
+			# Play portal closed sound
+			if sfx_portail_closed:
+				sfx_portail_closed.play()
 			print("You need the key to enter this portal!")

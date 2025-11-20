@@ -1142,7 +1142,7 @@ tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_ancdk")]
 z_index = 15
-position = Vector2(880, 120)
+position = Vector2(784, 120)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player"]
 
@@ -1154,11 +1154,11 @@ scale = Vector2(1.01547, 1.01547)
 metadata/_edit_use_anchors_ = true
 
 [node name="key" parent="." instance=ExtResource("18_jftbo")]
-position = Vector2(928, 128)
+position = Vector2(856, 128)
 
 [node name="portail_1" type="Area2D" parent="."]
 z_index = 11
-position = Vector2(944, 216)
+position = Vector2(976, 216)
 script = ExtResource("4_g4lra")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="portail_1"]
@@ -1167,7 +1167,7 @@ position = Vector2(-2.38419e-07, -2.38419e-07)
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_g4lra")
 
-[node name="portail_opened" type="Sprite2D" parent="portail_1"]
+[node name="portals" type="Sprite2D" parent="portail_1"]
 z_index = -10
 texture_filter = 1
 position = Vector2(-1.19209e-07, -3.57628e-07)
@@ -1178,15 +1178,15 @@ region_rect = Rect2(510, 0, 510, 640)
 
 [node name="sfx_portail_opened" type="AudioStreamPlayer" parent="portail_1"]
 stream = ExtResource("6_faucf")
-volume_db = -20.0
+volume_db = -18.0
 
 [node name="sfx_portail_closed" type="AudioStreamPlayer" parent="portail_1"]
 stream = ExtResource("7_g528s")
-volume_db = 3.7
+volume_db = -6.007
 
 [node name="press_enter" parent="." instance=ExtResource("5_g4lra")]
 z_index = 20
-position = Vector2(960, 176)
+position = Vector2(992, 176)
 scale = Vector2(0.0800293, 0.0800293)
 
 [node name="images" type="Sprite2D" parent="."]
@@ -1219,19 +1219,20 @@ texture = ExtResource("3_6b3hp")
 
 [node name="Grass1-2" type="Sprite2D" parent="images"]
 z_index = -1
-position = Vector2(30.6504, -40.4856)
+position = Vector2(52.9416, -40.4856)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_6b3hp")
 
 [node name="Grass1-3" type="Sprite2D" parent="images"]
 z_index = -1
-position = Vector2(47.3688, 11.0415)
+position = Vector2(22.2912, 11.0415)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_6b3hp")
+flip_h = true
 
 [node name="Grass3-2" type="Sprite2D" parent="images"]
 z_index = -1
-position = Vector2(27.864, 11.0415)
+position = Vector2(30.6504, 11.0415)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_3qm2i")
 
@@ -1243,7 +1244,7 @@ texture = ExtResource("4_3qm2i")
 
 [node name="Grass3-4" type="Sprite2D" parent="images"]
 z_index = -1
-position = Vector2(-19.5048, -33.1246)
+position = Vector2(-36.2232, -25.7636)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_3qm2i")
 flip_h = true

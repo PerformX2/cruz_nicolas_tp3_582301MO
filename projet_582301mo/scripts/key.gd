@@ -9,7 +9,7 @@ var is_collected := false
 signal honeybucket_collected
 
 func _ready():
-	await get_tree().create_timer(1.5).timeout
+	await get_tree().create_timer(0.5).timeout
 	portal_ready = true
 
 func _on_area_2d_body_entered(body):

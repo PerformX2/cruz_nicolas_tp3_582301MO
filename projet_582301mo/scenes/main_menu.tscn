@@ -68,6 +68,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("3_dcjl3")
 theme_override_font_sizes/font_size = 36
 text = "Start
+Game
 "
 
 [node name="Seperator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
@@ -78,5 +79,6 @@ custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_dcjl3")
 theme_override_font_sizes/font_size = 36
-text = "Exit
+text = "Stop 
+Game
 "
