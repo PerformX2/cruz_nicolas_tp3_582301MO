@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 BgMusic="*res://scenes/bg_music.tscn"
 
+[global_group]
+
+Player=""
+
 [input]
 
 jump={

@@ -121,7 +121,7 @@ _data = {
 radius = 11.0
 height = 40.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_mo32d")
 speed = 3.0
 
@@ -157,4 +157,4 @@ shape = SubResource("CapsuleShape2D_mo32d")
 
 [node name="sfx_jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_dqkch")
-volume_db = -19.0
+volume_db = -23.0
