@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=4 uid="uid://b135wbyrij1x0"]
+[gd_scene load_steps=19 format=4 uid="uid://b135wbyrij1x0"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_80huu"]
 [ext_resource type="PackedScene" uid="uid://0in4fdamtkga" path="res://scenes/player.tscn" id="2_yngje"]
-[ext_resource type="PackedScene" uid="uid://5d455m3a3xob" path="res://scenes/honeybucket.tscn" id="3_nw2bk"]
+[ext_resource type="PackedScene" uid="uid://cr0umqjt1cfjb" path="res://scenes/key.tscn" id="3_yngje"]
+[ext_resource type="Texture2D" uid="uid://ctly35n72gnkv" path="res://assets/images/directional_arrow.png" id="4_nw2bk"]
 [ext_resource type="Script" uid="uid://cbhds1gdy6sdh" path="res://scripts/portail_2.gd" id="4_yngje"]
 [ext_resource type="AudioStream" uid="uid://c6va6djtr7eg" path="res://assets/audio/portal_opened.wav" id="6_b0pbd"]
 [ext_resource type="PackedScene" uid="uid://bj7rqu1i7uw8b" path="res://scenes/press_enter.tscn" id="6_yngje"]
@@ -13,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bwp0rr42f4iti" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/BUSH - BACKGROUND.png" id="10_tdh8a"]
 [ext_resource type="Texture2D" uid="uid://3r2qbmc2mdnx" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - First.png" id="11_3sfin"]
 [ext_resource type="Texture2D" uid="uid://dx0p6ljieon6s" path="res://assets/images/portails_2.png" id="13_80huu"]
+[ext_resource type="PackedScene" uid="uid://bruwvlxxvms1c" path="res://scenes/hud.tscn" id="15_nw2bk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ancdk"]
 texture = ExtResource("1_80huu")
@@ -1141,8 +1143,17 @@ tile_set = SubResource("TileSet_hc3m2")
 z_index = 15
 position = Vector2(56, 168)
 
-[node name="honeybucket" parent="." instance=ExtResource("3_nw2bk")]
-position = Vector2(704, 40)
+[node name="CanvasLayer" type="CanvasLayer" parent="Player"]
+
+[node name="HUD" parent="Player/CanvasLayer" instance=ExtResource("15_nw2bk")]
+anchors_preset = -1
+offset_right = 2048.0
+offset_bottom = 1152.0
+scale = Vector2(1.01547, 1.01547)
+metadata/_edit_use_anchors_ = true
+
+[node name="key" parent="." instance=ExtResource("3_yngje")]
+position = Vector2(616, 48)
 
 [node name="portail_2" type="Area2D" parent="."]
 z_index = 11
@@ -1155,7 +1166,7 @@ position = Vector2(-2.38419e-07, -2.38419e-07)
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_80huu")
 
-[node name="Sprite2D" type="Sprite2D" parent="portail_2"]
+[node name="portail_opened" type="Sprite2D" parent="portail_2"]
 z_index = -10
 texture_filter = 1
 position = Vector2(-1.19209e-07, -3.57628e-07)
@@ -1164,11 +1175,11 @@ texture = ExtResource("13_80huu")
 region_enabled = true
 region_rect = Rect2(510, 0, 510, 640)
 
-[node name="sfx_portal_opened" type="AudioStreamPlayer" parent="portail_2"]
+[node name="sfx_portail_opened" type="AudioStreamPlayer" parent="portail_2"]
 stream = ExtResource("6_b0pbd")
 volume_db = -20.0
 
-[node name="sfx_portal_closed" type="AudioStreamPlayer" parent="portail_2"]
+[node name="sfx_portail_closed" type="AudioStreamPlayer" parent="portail_2"]
 stream = ExtResource("7_wsxs7")
 volume_db = 3.7
 
@@ -1176,6 +1187,33 @@ volume_db = 3.7
 z_index = 20
 position = Vector2(664, 112)
 scale = Vector2(0.0800293, 0.0800293)
+
+[node name="images" type="Sprite2D" parent="."]
+position = Vector2(56, 8)
+scale = Vector2(0.067864, 0.0896404)
+
+[node name="DirectionalArrow" type="Sprite2D" parent="images"]
+z_index = -1
+position = Vector2(0, 1338.68)
+texture = ExtResource("4_nw2bk")
+
+[node name="DirectionalArrow2" type="Sprite2D" parent="images"]
+z_index = -1
+texture = ExtResource("4_nw2bk")
+
+[node name="DirectionalArrow3" type="Sprite2D" parent="images"]
+z_index = -1
+position = Vector2(7662.38, 624.718)
+rotation = 1.5708
+scale = Vector2(1, 1.41991)
+texture = ExtResource("4_nw2bk")
+
+[node name="DirectionalArrow4" type="Sprite2D" parent="images"]
+z_index = -1
+position = Vector2(8841.21, 624.718)
+rotation = 1.5708
+scale = Vector2(1, 1.41991)
+texture = ExtResource("4_nw2bk")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scale = Vector2(0.837222, 0.837222)

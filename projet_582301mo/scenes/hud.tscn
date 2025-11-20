@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://bruwvlxxvms1c"]
 
-[ext_resource type="Texture2D" uid="uid://beu2iwaptd4un" path="res://assets/images/pixel_art_bee_1.png" id="1_c4vmg"]
 [ext_resource type="Script" uid="uid://cuubqwyqfpv23" path="res://scripts/hud.gd" id="1_y5tme"]
+[ext_resource type="Texture2D" uid="uid://bd8tusg2hh4jm" path="res://assets/images/honey_bucket/normal_honey_bucket.png" id="2_5ysmq"]
 [ext_resource type="LabelSettings" uid="uid://c1nfoba3hyhja" path="res://assets/UI settings/new_label_settings.tres" id="2_rd3kb"]
 
-[node name="HUD" type="Control" node_paths=PackedStringArray("collectable_bee_label", "portal_label") groups=["hud"]]
+[node name="HUD" type="Control" node_paths=PackedStringArray("portal_label") groups=["hud"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,20 +12,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_y5tme")
-collectable_bee_label = NodePath("CollectableBeeTexture/CollectableBeeLabel")
 portal_label = NodePath("PortalLabel")
 
-[node name="CollectableBeeTexture" type="TextureRect" parent="."]
+[node name="HoneyBucketTexture" type="TextureRect" parent="."]
 layout_mode = 1
 offset_left = 8.0
 offset_top = 40.0
 offset_right = 144.0
 offset_bottom = 176.0
-texture = ExtResource("1_c4vmg")
+texture = ExtResource("2_5ysmq")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="CollectableBeeLabel" type="Label" parent="CollectableBeeTexture"]
+[node name="HoneyBucketLabel" type="Label" parent="HoneyBucketTexture"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.222

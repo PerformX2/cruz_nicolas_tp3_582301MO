@@ -98,4 +98,4 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_87tj7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 324)
+anchor_mode = 0
