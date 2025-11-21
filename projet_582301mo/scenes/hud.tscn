@@ -27,13 +27,12 @@ stretch_mode = 4
 [node name="PortalLabel" type="Label" parent="HoneyBucketTexture"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.059
-anchor_top = 0.235
-anchor_right = -0.059
-anchor_bottom = 0.235
-offset_left = 152.024
-offset_top = -7.96
-offset_right = 489.024
-offset_bottom = 83.04
-text = "TROUVE LE POT DE MIEL ET ÉCHAPPE TOI"
+anchor_top = 0.529
+anchor_bottom = 0.529
+offset_left = 144.0
+offset_top = -63.944
+offset_right = 606.0
+offset_bottom = 75.056
+text = "TROUVE LE POT DE MIEL 
+ET VA DANS LE PORTAIL"
 label_settings = ExtResource("2_rd3kb")

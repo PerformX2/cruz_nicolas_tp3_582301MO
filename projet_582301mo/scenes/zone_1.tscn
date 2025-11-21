@@ -1143,7 +1143,7 @@ tile_set = SubResource("TileSet_hc3m2")
 
 [node name="Player" parent="." instance=ExtResource("2_ancdk")]
 z_index = 15
-position = Vector2(72, 32)
+position = Vector2(64, 48)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player"]
 
@@ -1182,11 +1182,11 @@ texture = ExtResource("7_ocm78")
 
 [node name="sfx_portail_opened" type="AudioStreamPlayer" parent="portail_1"]
 stream = ExtResource("6_faucf")
-volume_db = -18.0
+volume_db = -20.0
 
 [node name="sfx_portail_closed" type="AudioStreamPlayer" parent="portail_1"]
 stream = ExtResource("7_g528s")
-volume_db = -6.007
+volume_db = -5.0
 
 [node name="press_enter" parent="." instance=ExtResource("5_g4lra")]
 z_index = 20
