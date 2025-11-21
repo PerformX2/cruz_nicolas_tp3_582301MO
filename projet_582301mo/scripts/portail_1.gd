@@ -43,7 +43,7 @@ func _process(_delta):
 				get_tree().change_scene_to_file("res://scenes/zone_2.tscn")
 			else:
 				sfx_portail_closed.play()
-				print("You need the key to enter this portal!")
+				print("You need the honeybucket to enter this portal!")
 
 
 func _update_portal_visibility():

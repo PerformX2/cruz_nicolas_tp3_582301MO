@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bruwvlxxvms1c"]
 
 [ext_resource type="Script" uid="uid://cuubqwyqfpv23" path="res://scripts/hud.gd" id="1_y5tme"]
-[ext_resource type="Texture2D" uid="uid://bd8tusg2hh4jm" path="res://assets/images/honey_bucket/normal_honey_bucket.png" id="2_5ysmq"]
+[ext_resource type="Texture2D" uid="uid://bm2a7yw505ipk" path="res://assets/images/alert_icon.png" id="2_5ysmq"]
 [ext_resource type="LabelSettings" uid="uid://c1nfoba3hyhja" path="res://assets/UI settings/new_label_settings.tres" id="2_rd3kb"]
 
 [node name="HUD" type="Control" node_paths=PackedStringArray("portal_label") groups=["hud"]]
@@ -12,38 +12,28 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_y5tme")
-portal_label = NodePath("PortalLabel")
+portal_label = NodePath("HoneyBucketTexture/PortalLabel")
 
 [node name="HoneyBucketTexture" type="TextureRect" parent="."]
 layout_mode = 1
 offset_left = 8.0
-offset_top = 40.0
+offset_top = 8.0
 offset_right = 144.0
-offset_bottom = 176.0
+offset_bottom = 144.0
 texture = ExtResource("2_5ysmq")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="HoneyBucketLabel" type="Label" parent="HoneyBucketTexture"]
+[node name="PortalLabel" type="Label" parent="HoneyBucketTexture"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.222
-anchor_top = 0.493
-anchor_right = 0.222
-anchor_bottom = 0.5
-offset_left = 97.808
-offset_top = -51.048
-offset_right = 265.808
-offset_bottom = 39.0
-grow_vertical = 2
-text = "x 00"
-label_settings = ExtResource("2_rd3kb")
-vertical_alignment = 1
-
-[node name="PortalLabel" type="Label" parent="."]
-layout_mode = 0
-offset_left = 32.0
-offset_right = 173.0
-offset_bottom = 91.0
-text = "PORTAL CLOSED :("
+anchor_left = -0.059
+anchor_top = 0.235
+anchor_right = -0.059
+anchor_bottom = 0.235
+offset_left = 152.024
+offset_top = -7.96
+offset_right = 489.024
+offset_bottom = 83.04
+text = "TROUVE LE POT DE MIEL ET ÉCHAPPE TOI"
 label_settings = ExtResource("2_rd3kb")
