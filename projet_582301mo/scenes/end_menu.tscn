@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b40rfm3tdokg5"]
 
-[ext_resource type="Texture2D" uid="uid://dyk2lurxeruum" path="res://assets/images/dark_forest.jpg" id="2_2kle8"]
+[ext_resource type="Texture2D" uid="uid://8mpmi5j74gk6" path="res://assets/images/dark_forest(blue filter).jpg" id="1_87tj7"]
 [ext_resource type="Texture2D" uid="uid://c8xy34rxx70pq" path="res://assets/images/Pigor (fell).png" id="3_albv7"]
 [ext_resource type="FontFile" uid="uid://b8pn1k641e8pk" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="3_dcjl3"]
 [ext_resource type="Texture2D" uid="uid://x3dyqmkm4o4f" path="res://assets/images/empty_honey_bucket.png" id="4_87tj7"]
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_2kle8")
+texture = ExtResource("1_87tj7")
 expand_mode = 1
 flip_h = true
 
@@ -82,7 +82,7 @@ To be continued...
 
 
 
-Thanks for Playing ; )
+Merci d'avoir Joué ; )
 "
 horizontal_alignment = 1
 vertical_alignment = 1

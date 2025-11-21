@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyk2lurxeruum"
-path="res://.godot/imported/dark_forest.jpg-bc84736e5c1d724527d17339e19739a8.ctex"
+uid="uid://cji6x8eoh0wax"
+path="res://.godot/imported/portail_ouvert.png-3bc42a74c01419aee33e8db38d572f58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/dark_forest.jpg"
-dest_files=["res://.godot/imported/dark_forest.jpg-bc84736e5c1d724527d17339e19739a8.ctex"]
+source_file="res://assets/images/portail_ouvert.png"
+dest_files=["res://.godot/imported/portail_ouvert.png-3bc42a74c01419aee33e8db38d572f58.ctex"]
 
 [params]
 

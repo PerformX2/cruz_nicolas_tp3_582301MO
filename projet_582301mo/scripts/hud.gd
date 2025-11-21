@@ -11,4 +11,4 @@ func portal_opened():
 	portal_label.text = "PORTAL OPENED !"
 
 func portal_closed():
-	portal_label.text = "PORTAL CLOSED... COLLECT HONEYBUCKETS!"
+	portal_label.text = "PORTAL CLOSED... COLLECT THE HONEYBUCKET!"

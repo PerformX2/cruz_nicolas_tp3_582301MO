@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beu2iwaptd4un"
-path="res://.godot/imported/pixel_art_bee_1.png-4028eb2558e37a6f8877dfb25423bf24.ctex"
+uid="uid://8mpmi5j74gk6"
+path="res://.godot/imported/dark_forest(blue filter).jpg-eb95a1b7167816e370abcd7a8657fc82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/pixel_art_bee_1.png"
-dest_files=["res://.godot/imported/pixel_art_bee_1.png-4028eb2558e37a6f8877dfb25423bf24.ctex"]
+source_file="res://assets/images/dark_forest(blue filter).jpg"
+dest_files=["res://.godot/imported/dark_forest(blue filter).jpg-eb95a1b7167816e370abcd7a8657fc82.ctex"]
 
 [params]
 

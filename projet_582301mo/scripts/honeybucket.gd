@@ -15,7 +15,7 @@ func _on_body_entered(body):
 
 		# Play pickup animation (bigger image)
 		anim.play("pickedup")
-
+		
 		# Play sound
 		sfx.play()
 

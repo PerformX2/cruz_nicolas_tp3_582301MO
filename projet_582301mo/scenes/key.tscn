@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://5d455m3a3xob" path="res://scenes/honeybucket.tscn" id="2_wy8tx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fttkb"]
-radius = 6.66666
+radius = 6.66665
 height = 13.3333
 
 [node name="key" type="StaticBody2D"]

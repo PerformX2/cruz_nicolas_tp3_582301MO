@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c0kdtghpnlykw"]
 
 [ext_resource type="Script" uid="uid://dmnaftmd43mw8" path="res://scripts/main_menu.gd" id="1_p6ils"]
-[ext_resource type="Texture2D" uid="uid://dyk2lurxeruum" path="res://assets/images/dark_forest.jpg" id="2_2kle8"]
+[ext_resource type="Texture2D" uid="uid://8mpmi5j74gk6" path="res://assets/images/dark_forest(blue filter).jpg" id="2_bqqt6"]
 [ext_resource type="FontFile" uid="uid://b8pn1k641e8pk" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="3_dcjl3"]
 
 [node name="Main_Menu" type="Control" groups=["main_menu"]]
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_2kle8")
+texture = ExtResource("2_bqqt6")
 expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]

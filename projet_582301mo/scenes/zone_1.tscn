@@ -1,15 +1,16 @@
-[gd_scene load_steps=22 format=4 uid="uid://cpowsjihpl6h7"]
+[gd_scene load_steps=23 format=4 uid="uid://cinfw7l47ycl0"]
 
 [ext_resource type="Texture2D" uid="uid://cacqfcwl63icl" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Tiles/Tilesheet - WOODS.png" id="1_1gua8"]
 [ext_resource type="PackedScene" uid="uid://0in4fdamtkga" path="res://scenes/player.tscn" id="2_ancdk"]
 [ext_resource type="Texture2D" uid="uid://cgaic0htwo0qa" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/GRASS 1-1.png" id="3_6b3hp"]
 [ext_resource type="Texture2D" uid="uid://vempkmj5c6rw" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/GRASS 3-2.png" id="4_3qm2i"]
 [ext_resource type="Script" uid="uid://b273fslkmiwge" path="res://scripts/portail_1.gd" id="4_g4lra"]
-[ext_resource type="Texture2D" uid="uid://dx0p6ljieon6s" path="res://assets/images/portails_2.png" id="4_kymhr"]
 [ext_resource type="PackedScene" uid="uid://bj7rqu1i7uw8b" path="res://scenes/press_enter.tscn" id="5_g4lra"]
 [ext_resource type="AudioStream" uid="uid://c6va6djtr7eg" path="res://assets/audio/portal_opened.wav" id="6_faucf"]
+[ext_resource type="Texture2D" uid="uid://p4sro8u7fxfi" path="res://assets/images/portail_fermé.png" id="6_jftbo"]
 [ext_resource type="Texture2D" uid="uid://dnnw15atrmxkm" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Decorations/MUSHROOM 2-1.png" id="6_sgi1b"]
 [ext_resource type="AudioStream" uid="uid://p7x26cafy6l2" path="res://assets/audio/portal_closed.wav" id="7_g528s"]
+[ext_resource type="Texture2D" uid="uid://cji6x8eoh0wax" path="res://assets/images/portail_ouvert.png" id="7_ocm78"]
 [ext_resource type="Texture2D" uid="uid://dyav3tbl4h5uc" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Fourth.png" id="8_2r61p"]
 [ext_resource type="Texture2D" uid="uid://ctly35n72gnkv" path="res://assets/images/directional_arrow.png" id="8_g528s"]
 [ext_resource type="Texture2D" uid="uid://di7qiefsdt53" path="res://assets/images/Pixel Art Tiles and Backgrounds - Woods/Backgrounds/layers/WOODS - Third.png" id="9_kymhr"]
@@ -1167,14 +1168,17 @@ position = Vector2(-2.38419e-07, -2.38419e-07)
 scale = Vector2(0.2, 0.2)
 shape = SubResource("CapsuleShape2D_g4lra")
 
-[node name="portals" type="Sprite2D" parent="portail_1"]
+[node name="portal_closed" type="Sprite2D" parent="portail_1"]
 z_index = -10
 texture_filter = 1
-position = Vector2(-1.19209e-07, -3.57628e-07)
-scale = Vector2(0.11999, 0.11999)
-texture = ExtResource("4_kymhr")
-region_enabled = true
-region_rect = Rect2(510, 0, 510, 640)
+position = Vector2(-1.43051e-05, 9.53674e-07)
+scale = Vector2(0.105637, 0.105637)
+texture = ExtResource("6_jftbo")
+
+[node name="portal_opened" type="Sprite2D" parent="portail_1"]
+position = Vector2(5.24521e-06, -9.53674e-07)
+scale = Vector2(0.11299, 0.11299)
+texture = ExtResource("7_ocm78")
 
 [node name="sfx_portail_opened" type="AudioStreamPlayer" parent="portail_1"]
 stream = ExtResource("6_faucf")
