@@ -1195,7 +1195,7 @@ volume_db = -20.0
 
 [node name="sfx_portail_closed" type="AudioStreamPlayer" parent="portail_2"]
 stream = ExtResource("7_wsxs7")
-volume_db = 3.7
+volume_db = -5.0
 
 [node name="press_enter" parent="." instance=ExtResource("6_yngje")]
 z_index = 20
@@ -1213,10 +1213,10 @@ texture = ExtResource("4_nw2bk")
 
 [node name="DirectionalArrow2" type="Sprite2D" parent="images"]
 z_index = -1
-position = Vector2(9548.51, -1.52588e-05)
-rotation = 1.5708
-scale = Vector2(1, 1.41991)
+position = Vector2(6985.47, 1643.44)
+scale = Vector2(1.17361, 1.09799)
 texture = ExtResource("4_nw2bk")
+flip_h = true
 
 [node name="DirectionalArrow3" type="Sprite2D" parent="images"]
 z_index = -1
