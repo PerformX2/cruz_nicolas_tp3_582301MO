@@ -2,7 +2,7 @@
 Le dossier assets contient des dossiers avec différentes catégories de média.
 
 
-### Sources des médias:
+### Sources des médias utilisés:
 
 Pixel art, background + tiles: (https://karsiori.itch.io/woods-tileset-and-background?download)
 
