@@ -20,18 +20,18 @@ Background music: (https://pixabay.com/music/video-games-8-bit-219384/)
 
 Font for menus (Luckiest Guy): (https://fonts.google.com/specimen/Luckiest+Guy)
 
-Font for HUD (Pixeled): (https://www.dafont.com/pixeled.font)
+Font for HUD and "Press enter image" modification on Photoshop (Pixeled): (https://www.dafont.com/pixeled.font)
 
-Portal closed sfx: (https://pixabay.com/sound-effects/cloud-spread-394490/)
-
-Portal activated sfx: (https://pixabay.com/sound-effects/shine-193240/)
-
-Press enter image: (https://as2.ftcdn.net/v2/jpg/15/03/98/89/1000_F_1503988968_raOHYl4YVNagYwUhRlrfadqJ2MRAF80m.jpg)
+Press enter image (MODIFIED ON PHOTOSHOP): (https://as2.ftcdn.net/v2/jpg/15/03/98/89/1000_F_1503988968_raOHYl4YVNagYwUhRlrfadqJ2MRAF80m.jpg)
 
 Pointing finger for "Press enter image" modification on Photoshop: (https://www.creativefabrica.com/product/point-finger-pixel-icon-vector-design/)
 
 Bell alert image: (https://www.freepik.com/premium-vector/pixel-art-notification-alert-icon_137105860.htm)
 
+Arrow image: (https://pixelartmaker.com/art/a78518a4fdac44d)
+
 Portal image: (https://pixelartmaker.com/art/dd28c3e5604d33a)
 
-Arrow image: (https://pixelartmaker.com/art/a78518a4fdac44d)
+Portal closed sfx: (https://pixabay.com/sound-effects/cloud-spread-394490/)
+
+Portal activated sfx: (https://pixabay.com/sound-effects/shine-193240/)
